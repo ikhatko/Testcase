@@ -1,0 +1,52 @@
+.example-container {
+  position: relative;
+  min-height: 200px;
+}
+
+table {
+  width: 100%;
+}
+
+.example-loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-row:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+
+.point{
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  cursor: move;
+  z-index: 2;
+  top: 5px;
+}
+
+.right{
+  left: 105px;
+}
+
+
+.line{
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: black;
+  transform-origin: 0px 0px;
+  z-index: 1;
+}

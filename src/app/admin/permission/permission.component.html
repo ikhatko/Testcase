@@ -1,0 +1,22 @@
+<div class="container">
+  <h3>Permissions count = {{permissionsCount}}</h3>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Permission email</th>
+      <th>Permission name</th>
+      <th>Permission value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let permission of permissions; let i = index">
+      <th scope="row">{{i + 1}}</th>
+      <td>{{permission.email}}</td>
+      <td>{{permission.name}}</td>
+      <td>{{permission.value}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <app-add-form [permissions]="permissions" (permissionCount)="getCount($event)"></app-add-form>
+</div>
